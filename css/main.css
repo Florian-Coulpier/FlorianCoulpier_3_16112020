@@ -1,0 +1,365 @@
+header {
+  background-color: #fff;
+  -webkit-box-shadow: 0px 2px 4px #0202025e;
+          box-shadow: 0px 2px 4px #0202025e;
+  padding: 20px 15px 7px 15px;
+  position: relative;
+  z-index: 10;
+}
+
+header i {
+  position: absolute;
+  font-size: 20px;
+  top: 25px;
+  left: 6%;
+  color: rgba(0, 0, 0, 0.801);
+}
+
+header h1 {
+  text-align: center;
+  margin: 0;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+footer {
+  background-color: #353535;
+  color: #fff;
+  padding: 20px 15px;
+  z-index: 11;
+}
+
+@media (min-width: 1000px) {
+  footer {
+    text-align: center;
+  }
+}
+
+footer h1 {
+  font-size: 25px;
+  margin-top: 0px;
+}
+
+footer .footer__partner i {
+  width: 13px;
+}
+
+footer i {
+  margin-right: 15px;
+}
+
+footer p {
+  margin: 8px 0px;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../Fonts/Roboto-Regular.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: 'Roboto-Thin';
+  src: url("../Fonts/Roboto-Thin.ttf");
+}
+
+@font-face {
+  font-family: 'Shrikhand';
+  src: url("../Fonts/Shrikhand-Regular.otf") format("otf");
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto';
+}
+
+body h1 {
+  font-family: 'Shrikhand';
+}
+
+.reservation__button {
+  margin: 30px 0px 35px 0px;
+  padding: 15px 20px;
+  border-radius: 25px;
+  color: #fff;
+  background: linear-gradient(170deg, #FF79DA, #9356DC);
+  border: none;
+  font-size: 15.8px;
+}
+
+.functioning__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 12px;
+}
+
+@media (min-width: 1000px) {
+  .functioning__buttons {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.functioning button {
+  width: 100%;
+  padding: 28px 0px;
+  margin: 8px 0px 15px 0px;
+  background-color: #f6f6f6;
+  border-radius: 20px;
+  border: none;
+  -webkit-box-shadow: 3px 10px 10px #d6d6d669;
+          box-shadow: 3px 10px 10px #d6d6d669;
+  font-size: 16px;
+  position: relative;
+}
+
+@media (min-width: 1000px) {
+  .functioning button {
+    width: 300px;
+    margin-right: 20px;
+  }
+}
+
+.functioning button span {
+  padding: 4px 8px;
+  font-size: 14px;
+  background-color: #9356DC;
+  color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  left: -12px;
+  top: 50%;
+  -webkit-transform: translate(0px, -12px);
+          transform: translate(0px, -12px);
+}
+
+.functioning .functioning__button__choice i {
+  font-size: 20px;
+  color: #7e7e7e;
+  position: absolute;
+  left: 10%;
+}
+
+.functioning .functioning__button__choice p {
+  margin: 0px;
+}
+
+.functioning .functioning__button__compose i {
+  font-size: 18px;
+  color: #7e7e7e;
+  position: absolute;
+  left: 10%;
+}
+
+.functioning .functioning__button__compose p {
+  margin: 0px;
+}
+
+.functioning .functioning__button__taste {
+  background-color: #f5edff;
+}
+
+.functioning .functioning__button__taste i {
+  color: #9356DC;
+  font-size: 15px;
+  position: absolute;
+  left: 10%;
+}
+
+.functioning .functioning__button__taste p {
+  margin: 0px;
+}
+
+.functioning a {
+  text-decoration: none;
+}
+
+main {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.adress {
+  background-color: #eaeaea;
+  text-align: center;
+  color: #313131;
+}
+
+.adress i {
+  padding-right: 15px;
+  font-size: 18px;
+}
+
+.adress p {
+  padding: 15px 0px;
+  margin: 0;
+}
+
+.reservation {
+  background-color: #f6f6f6;
+  padding: 20px 15px 20px 15px;
+  text-align: center;
+}
+
+.reservation h2 {
+  margin: 20px 0px 12px 0px;
+  font-weight: bold;
+}
+
+.reservation p {
+  margin: 0px;
+  font-size: 18px;
+  font-family: 'Roboto-Thin';
+  font-weight: 600;
+}
+
+.functioning {
+  padding: 25px 20px 50px 20px;
+}
+
+.restaurant {
+  padding: 40px 20px 20px 20px;
+  background-color: #f6f6f6;
+}
+
+@media (min-width: 600px) {
+  .restaurant .restaurant__allcards {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -webkit-column-gap: 20px;
+            column-gap: 20px;
+  }
+}
+
+.restaurant .restaurant__allcards a {
+  text-decoration: none;
+}
+
+.restaurant__cards {
+  border: 2px solid #020202;
+  height: 255px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 15px;
+  background-color: #fff;
+  -webkit-box-shadow: 3px 10px 10px #d6d6d669;
+          box-shadow: 3px 10px 10px #d6d6d669;
+}
+
+.restaurant__cards__picture {
+  position: relative;
+  margin: 0px;
+  width: auto;
+  height: 180px;
+}
+
+.restaurant__cards__picture img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.restaurant__cards__picture .new {
+  background-color: #99e2d0;
+  color: #3b8673;
+  padding: 6px 10px;
+  font-size: 14px;
+  width: 18%;
+  text-align: center;
+  border-radius: 3px;
+  position: absolute;
+  right: 4%;
+  top: 8%;
+  z-index: 10;
+}
+
+.restaurant__cards__picture .new p {
+  margin: 0px;
+}
+
+.restaurant__cards__description {
+  position: relative;
+}
+
+.restaurant__cards__description h3 {
+  font-weight: bold;
+  margin: 15px 0px 3px 15px;
+  color: black;
+}
+
+.restaurant__cards__description p {
+  margin: 0px 0px 0px 15px;
+  font-weight: lighter;
+  color: black;
+}
+
+.restaurant__cards__description i {
+  font-size: 25px;
+  position: absolute;
+  right: 7%;
+  top: 10%;
+  color: black;
+}
+
+.restaurant__cards__description i:hover {
+  color: linear-gradient(#FF79DA, #9356DC);
+}
+
+main {
+  position: relative;
+}
+
+main .img__heading {
+  height: 300px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -10;
+}
+
+main .menu {
+  background-color: #f6f6f6;
+  margin-top: 100px;
+  padding: 15px 20px;
+  position: absolute;
+  width: 100%;
+  top: 140px;
+  z-index: 10;
+  border-top-left-radius: 45px;
+  border-top-right-radius: 45px;
+}
+
+main .menu h2 {
+  font-family: 'Shrikhand';
+  font-size: 28px;
+}
+
+main .menu h3 {
+  margin-top: 30px;
+  text-transform: uppercase;
+  font-weight: 200;
+  font-size: 16px;
+}
+
+main .menu hr {
+  width: 30px;
+  height: 3px;
+  background-color: #99e2d0;
+  text-align: left;
+}
+/*# sourceMappingURL=main.css.map */

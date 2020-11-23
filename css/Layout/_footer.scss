@@ -1,0 +1,26 @@
+footer {
+  background-color: rgb(53, 53, 53);
+  color: #fff;
+  padding: 20px 15px;
+  @include desktop__footer;
+  z-index: 11;
+  
+  h1 {
+    font-size: 25px;
+    margin-top: 0px;
+  }
+
+  .footer__partner {
+    i{
+      width: 13px;
+    }
+  }
+
+  i{
+    margin-right: 15px;
+  }
+
+  p{
+    margin: 8px 0px;
+  }
+}
