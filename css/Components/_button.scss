@@ -29,7 +29,7 @@
     span {
       padding: 4px 8px;
       font-size: 14px;
-      background-color: #9356DC;
+      background-color: $colourprimaire;
       color: #fff;
       border-radius: 50%;
       position: absolute;
@@ -68,17 +68,24 @@
   }
 
   .functioning__button__taste {
-    background-color: rgb(245, 237, 255);
 
     i {
-      color: #9356DC;
+      color: rgb(126, 126, 126);
       font-size: 15px;
       position: absolute;
       left: 10%;
+
+      &:hover {
+        color: $colourprimaire;
+      }
     }
 
     p {
       margin: 0px;
+    }
+
+    &:hover {
+      background-color: rgb(245, 237, 255);
     }
   }
 
@@ -87,3 +94,22 @@
   }
 }
 
+// MENU //
+
+main {
+
+  .menu {
+
+    button {
+      @include button;
+      padding: 15px 45px;
+      transform: translateX(50%);
+      margin-bottom: 50px;
+
+      &:hover {
+        opacity: 0.8;
+        box-shadow: 1px 10px 10px #cfcfcf;
+      }
+    }
+  }
+}

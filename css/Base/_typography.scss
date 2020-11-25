@@ -1,24 +1,16 @@
-@font-face {
-  font-family: 'Roboto';
-  src: url("../Fonts/Roboto-Regular.ttf")
-  format('ttf');
-}
+// POLICE CORPS 'ROBOTO' //
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100&display=swap');
 
-@font-face {
-  font-family: 'Roboto-Thin';
-  src: url("../Fonts/Roboto-Thin.ttf")
-}
+// POLICE TITRE 'SHRIKHAND' //
 
-@font-face {
-  font-family: 'Shrikhand';
-  src: url("../Fonts/Shrikhand-Regular.otf")
-  format('otf')
-}
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 
-body{
+body {
   margin: 0;
-  font-family: 'Roboto';
-  h1{
-    font-family: 'Shrikhand';
+  font-family: 'Roboto', sans-serif;
+  
+  h1 {
+    font-family: 'Shrikhand', cursive;
+    font-weight: normal;
   }
 }

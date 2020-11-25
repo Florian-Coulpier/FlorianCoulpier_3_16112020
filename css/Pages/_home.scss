@@ -26,14 +26,13 @@ main{
 
   h2{
     margin: 20px 0px 12px 0px;
-    font-weight: bold;
+    font-weight: 500;
   }
 
   p{
     margin: 0px;
     font-size: 18px;
-    font-family: 'Roboto-Thin';
-    font-weight: 600;
+    font-weight: 100;
   }
 }
 
@@ -79,7 +78,7 @@ main{
     }
 
     .new {
-      background-color: $colour;
+      background-color: $colourtertiaire;
       color: #3b8673;
       padding: 6px 10px;
       font-size: 14px;
@@ -108,7 +107,7 @@ main{
 
     p{
       margin: 0px 0px 0px 15px;
-      font-weight: lighter;
+      font-weight: 300;
       color: black;
     }
 
@@ -120,7 +119,7 @@ main{
       color: black;
 
       &:hover{
-        color: linear-gradient(#FF79DA, #9356DC);
+        color: linear-gradient($coloursecondaire, $colourtertiaire);
       }
     }
   }
@@ -129,44 +128,83 @@ main{
 // MENU //
 
 main {
-  position: relative;
-
+  
   .img__heading {
-    height: 300px;
+    height: 280px;
     width: 100%;
+    margin-top: -220px;
     object-fit: cover;
-    z-index: -10;
+    z-index: -10; 
+    position: absolute;
   }
 
   .menu {
     background-color: rgb(246, 246, 246);
-    margin-top: 100px;
-    padding: 15px 20px;
-    position: absolute;
-    width: 100%;
+    margin-top: 220px;
+    padding: 15px 15px;
     top: 140px;
-    z-index: 10;
-    border-top-left-radius: 45px;
-    border-top-right-radius: 45px;
-
+    z-index: 0;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
     
     h2 {
       font-family: 'Shrikhand';
-      font-size: 28px;
+      font-size: 27px;
+      font-weight: lighter;
+    }
+
+    i {
+      float: right;
+      margin-right: 20px;
+      margin-top: 3px;
     }
 
     h3 {
       margin-top: 30px;
+      margin-bottom: 3px;
       text-transform: uppercase;
       font-weight: 200;
       font-size: 16px;
     }
 
-    hr {
-      width: 30px;
-      height: 3px;
-      background-color: $colour;
-      text-align: left;
+    .soulignement {
+      border-bottom: 3px solid #99e2d0;
+      width: 40px;
+      padding-top: 1px;
     }
+
+    .menu__entree, .menu__plat, .menu__dessert {
+      background-color: white;
+      border-radius: 18px;
+      box-shadow: 3px 10px 10px #d6d6d669;
+      position: relative;
+      padding: 12px 0px 12px 10px;
+      margin: 15px 0px;
+    }
+  }
+}
+
+.menu__entree, .menu__plat, .menu__dessert {
+
+  h4 {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0px;
+    padding-bottom: 5px;
+  }
+
+  p {
+    font-size: 15px;
+    font-weight: lighter;
+    margin: 0px;
+    flex-wrap: wrap;
+    padding-right: 70px;
+  }
+
+  span {
+    position: absolute;
+    right: 20px;
+    bottom: 11px;
+    font-weight: 500;
   }
 }

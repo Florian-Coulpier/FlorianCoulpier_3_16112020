@@ -3,11 +3,11 @@ footer {
   color: #fff;
   padding: 20px 15px;
   @include desktop__footer;
-  z-index: 11;
   
   h1 {
-    font-size: 25px;
+    font-size: 18px;
     margin-top: 0px;
+    font-weight: lighter;
   }
 
   .footer__partner {
@@ -22,5 +22,6 @@ footer {
 
   p{
     margin: 8px 0px;
+
   }
 }
