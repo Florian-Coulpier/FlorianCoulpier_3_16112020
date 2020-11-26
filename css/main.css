@@ -30,7 +30,7 @@ footer {
   padding: 20px 15px;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
   footer {
     text-align: center;
   }
@@ -52,6 +52,11 @@ footer i {
 
 footer p {
   margin: 8px 0px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
 }
 
 body {
@@ -85,7 +90,7 @@ body h1 {
   padding-left: 12px;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
   .functioning__buttons {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -110,7 +115,7 @@ body h1 {
   position: relative;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
   .functioning button {
     width: 300px;
     margin-right: 20px;
@@ -184,9 +189,10 @@ main .menu button {
   border: none;
   font-size: 15.8px;
   padding: 15px 45px;
-  -webkit-transform: translateX(50%);
-          transform: translateX(50%);
   margin-bottom: 50px;
+  margin-left: 50%;
+  -webkit-transform: translateX(-90px);
+          transform: translateX(-90px);
 }
 
 main .menu button:hover {
@@ -341,6 +347,12 @@ main .img__heading {
   position: absolute;
 }
 
+@media (min-width: 1200px) {
+  main .img__heading {
+    width: 1200px;
+  }
+}
+
 main .menu {
   background-color: #f6f6f6;
   margin-top: 220px;
@@ -408,5 +420,17 @@ main .menu .menu__entree, main .menu .menu__plat, main .menu .menu__dessert {
   right: 20px;
   bottom: 11px;
   font-weight: 500;
+}
+
+.contact__heading {
+  margin: 100px 0px 20px 0px;
+  text-align: center;
+  font-family: "Shrikhand";
+}
+
+.contact__mail {
+  text-align: center;
+  font-family: "Roboto";
+  margin: 20px 0px 100px 0px;
 }
 /*# sourceMappingURL=main.css.map */

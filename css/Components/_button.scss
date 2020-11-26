@@ -103,8 +103,9 @@ main {
     button {
       @include button;
       padding: 15px 45px;
-      transform: translateX(50%);
       margin-bottom: 50px;
+      margin-left: 50%;
+      transform: translateX(-90px);
 
       &:hover {
         opacity: 0.8;
