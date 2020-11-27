@@ -74,18 +74,10 @@
       font-size: 15px;
       position: absolute;
       left: 10%;
-
-      &:hover {
-        color: $colourprimaire;
-      }
     }
 
     p {
       margin: 0px;
-    }
-
-    &:hover {
-      background-color: rgb(245, 237, 255);
     }
   }
 
