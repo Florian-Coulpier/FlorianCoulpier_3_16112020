@@ -228,7 +228,7 @@ main .menu button:hover {
   }
 }
 
-.spinner {
+.wait .spinner {
   width: 80px;
   height: 80px;
   border-top: 15px solid #9356DC;
@@ -254,8 +254,8 @@ main .menu button:hover {
     opacity: 0.1;
   }
   50% {
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
+    -webkit-transform: rotate(190deg);
+            transform: rotate(190deg);
     opacity: 0.5;
   }
   100% {
@@ -272,8 +272,8 @@ main .menu button:hover {
     opacity: 0.1;
   }
   50% {
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
+    -webkit-transform: rotate(190deg);
+            transform: rotate(190deg);
     opacity: 0.5;
   }
   100% {
@@ -412,7 +412,24 @@ main {
   position: absolute;
   right: 7%;
   top: 10%;
-  color: linear-gradient(#FF79DA, #99e2d0);
+  color: black;
+}
+
+.restaurant__cards__description i:hover {
+  opacity: 0;
+}
+
+.restaurant__cards__description span {
+  font-size: 25px;
+  position: absolute;
+  right: 7%;
+  top: 10%;
+  opacity: 0;
+  color: linear-gradient(#FF79DA, #9356DC);
+}
+
+.restaurant__cards__description span:hover {
+  opacity: 1;
 }
 
 main .img__heading {
