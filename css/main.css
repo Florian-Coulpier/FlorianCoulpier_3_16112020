@@ -347,7 +347,7 @@ main {
 
 .restaurant__cards {
   border: 2px solid #020202;
-  height: 255px;
+  height: 260px;
   margin-bottom: 20px;
   border: none;
   border-radius: 15px;
@@ -397,7 +397,7 @@ main {
 
 .restaurant__cards__description h3 {
   font-weight: bold;
-  margin: 15px 0px 3px 15px;
+  margin: 18px 0px 3px 15px;
   color: black;
 }
 
@@ -408,28 +408,56 @@ main {
 }
 
 .restaurant__cards__description i {
-  font-size: 25px;
+  font-size: 22px;
   position: absolute;
   right: 7%;
   top: 10%;
   color: black;
+  background-color: white;
+  z-index: 100;
 }
 
 .restaurant__cards__description i:hover {
-  opacity: 0;
+  -webkit-animation: hidden 1s ease;
+          animation: hidden 1s ease;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes hidden {
+  0% {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+    color: white;
+  }
+  100% {
+    -webkit-transform: translate(0px, -22px);
+            transform: translate(0px, -22px);
+    color: white;
+  }
+}
+
+@keyframes hidden {
+  0% {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+    color: white;
+  }
+  100% {
+    -webkit-transform: translate(0px, -22px);
+            transform: translate(0px, -22px);
+    color: white;
+  }
 }
 
 .restaurant__cards__description span {
-  font-size: 25px;
+  font-size: 22px;
   position: absolute;
   right: 7%;
   top: 10%;
-  opacity: 0;
-  color: linear-gradient(#FF79DA, #9356DC);
-}
-
-.restaurant__cards__description span:hover {
-  opacity: 1;
+  color: transparent;
+  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
 }
 
 main .img__heading {
@@ -464,14 +492,57 @@ main .menu h2 {
   font-weight: lighter;
 }
 
-main .menu h2 i:hover {
-  background-color: linear-gradient(#FF79DA, #99e2d0);
+main .menu i {
+  position: absolute;
+  right: 10%;
+  margin-top: 4px;
+  font-size: 30px;
+  color: black;
+  background-color: #f6f6f6;
+  z-index: 100;
 }
 
-main .menu i {
-  float: right;
-  margin-right: 20px;
-  margin-top: 3px;
+main .menu i:hover {
+  -webkit-animation: hidden-heart 1s ease;
+          animation: hidden-heart 1s ease;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes hidden-heart {
+  0% {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+    color: #f6f6f6;
+  }
+  100% {
+    -webkit-transform: translate(0px, -30px);
+            transform: translate(0px, -30px);
+    color: #f6f6f6;
+  }
+}
+
+@keyframes hidden-heart {
+  0% {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+    color: #f6f6f6;
+  }
+  100% {
+    -webkit-transform: translate(0px, -30px);
+            transform: translate(0px, -30px);
+    color: #f6f6f6;
+  }
+}
+
+main .menu .fas {
+  position: absolute;
+  right: 10%;
+  margin-top: 4px;
+  font-size: 30px;
+  color: transparent;
+  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
 }
 
 main .menu h3 {
@@ -488,6 +559,73 @@ main .menu .soulignement {
   padding-top: 1px;
 }
 
+main .menu .menu__entrees {
+  -webkit-animation: apparition 1.5s;
+          animation: apparition 1.5s;
+}
+
+@-webkit-keyframes apparition {
+  0% {
+    -webkit-transform: translate(0px, 30px);
+            transform: translate(0px, 30px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+    opacity: 1;
+  }
+}
+
+@keyframes apparition {
+  0% {
+    -webkit-transform: translate(0px, 30px);
+            transform: translate(0px, 30px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+    opacity: 1;
+  }
+}
+
+main .menu .menu__plats {
+  -webkit-animation: apparition 1.5s .5s;
+          animation: apparition 1.5s .5s;
+}
+
+@keyframes apparition {
+  0% {
+    -webkit-transform: translate(0px, 30px);
+            transform: translate(0px, 30px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+    opacity: 1;
+  }
+}
+
+main .menu .menu__desserts {
+  -webkit-animation: apparition 1.5s 1s;
+          animation: apparition 1.5s 1s;
+}
+
+@keyframes apparition {
+  0% {
+    -webkit-transform: translate(0px, 30px);
+            transform: translate(0px, 30px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+    opacity: 1;
+  }
+}
+
 main .menu .menu__entree, main .menu .menu__plat, main .menu .menu__dessert {
   background-color: white;
   border-radius: 18px;
@@ -498,14 +636,19 @@ main .menu .menu__entree, main .menu .menu__plat, main .menu .menu__dessert {
   margin: 15px 0px;
 }
 
-.menu__entree h4, .menu__plat h4, .menu__dessert h4 {
+main .menu .menu__entree .description, main .menu .menu__plat .description, main .menu .menu__dessert .description {
+  width: 80%;
+  height: 100%;
+}
+
+main .menu .menu__entree .description h4, main .menu .menu__plat .description h4, main .menu .menu__dessert .description h4 {
   font-size: 18px;
   font-weight: 400;
   margin: 0px;
   padding-bottom: 5px;
 }
 
-.menu__entree p, .menu__plat p, .menu__dessert p {
+main .menu .menu__entree .description p, main .menu .menu__plat .description p, main .menu .menu__dessert .description p {
   font-size: 15px;
   font-weight: lighter;
   margin: 0px;
@@ -514,11 +657,32 @@ main .menu .menu__entree, main .menu .menu__plat, main .menu .menu__dessert {
   padding-right: 70px;
 }
 
-.menu__entree span, .menu__plat span, .menu__dessert span {
+main .menu .menu__entree .description span, main .menu .menu__plat .description span, main .menu .menu__dessert .description span {
   position: absolute;
   right: 20px;
   bottom: 11px;
   font-weight: 500;
+}
+
+main .menu .menu__entree .check, main .menu .menu__plat .check, main .menu .menu__dessert .check {
+  background-color: #99e2d0;
+  position: absolute;
+  height: 100%;
+  width: 20%;
+  border-top-right-radius: 18px;
+  border-bottom-right-radius: 18px;
+  right: -20%;
+  top: 0;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+main .menu .menu__entree:hover .description, main .menu .menu__plat:hover .description, main .menu .menu__dessert:hover .description {
+  right: -20%;
+}
+
+main .menu .menu__entree:hover .check, main .menu .menu__plat:hover .check, main .menu .menu__dessert:hover .check {
+  right: 0%;
 }
 
 .contact__heading {

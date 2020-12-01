@@ -8,7 +8,7 @@
 
   // Animation background //
   animation: opacite 1.5s linear;
-  
+
   @keyframes opacite {
     0% {
       opacity: 1;
@@ -54,12 +54,12 @@
   }
 }
 
-main{
+main {
   max-width: 1200px;
   margin: auto;
 }
 
-.adress{
+.adress {
   background-color: rgb(234, 234, 234);
   text-align: center;
   color: rgb(49, 49, 49);
@@ -69,23 +69,23 @@ main{
     font-size: 18px;
   }
 
-  p{
+  p {
     padding: 15px 0px;
     margin: 0;
   }
 }
 
-.reservation{
+.reservation {
   background-color: rgb(246, 246, 246);
   padding: 20px 15px 20px 15px;
   text-align: center;
 
-  h2{
+  h2 {
     margin: 20px 0px 12px 0px;
     font-weight: 500;
   }
 
-  p{
+  p {
     margin: 0px;
     font-size: 18px;
     font-weight: 100;
@@ -109,9 +109,9 @@ main{
   }
 }
   
-.restaurant__cards{
+.restaurant__cards {
   border: 2px solid #020202;
-  height: 255px;
+  height: 260px;
   margin-bottom: 20px;
   border: none;
   border-radius: 15px;
@@ -157,7 +157,7 @@ main{
 
     h3{
       font-weight: bold;
-      margin: 15px 0px 3px 15px;
+      margin: 18px 0px 3px 15px;
       color: black;
     }
 
@@ -168,28 +168,39 @@ main{
     }
 
     i {
-      font-size: 25px;
+      font-size: 22px;
       position: absolute;
       right: 7%;
       top: 10%;
       color: black;
+      background-color: white;
+      z-index: 100;
 
       &:hover {
-        opacity: 0;
+        animation: hidden 1s ease;
+        animation-fill-mode: forwards;
+
+        @keyframes hidden {
+          0% {
+            transform: translate(0px, 0px);
+            color: white;
+          }
+          100% {
+            transform: translate(0px, -22px);
+            color: white;
+          }
+        }
       }
     }
 
     span {
-      font-size: 25px;
+      font-size: 22px;
       position: absolute;
       right: 7%;
       top: 10%;
-      opacity: 0;
-      color: linear-gradient($coloursecondaire, $colourprimaire);
-
-      &:hover {
-        opacity: 1;
-      }
+      color: transparent;
+      background: -webkit-linear-gradient(#9356DC, #FF79DA);
+      -webkit-background-clip: text;
     }
   } 
 }
@@ -221,16 +232,42 @@ main {
       font-family: 'Shrikhand';
       font-size: 27px;
       font-weight: lighter;
-
-      i:hover {
-        background-color: linear-gradient($coloursecondaire, $colourtertiaire);
-      }
     }
 
     i {
-      float: right;
-      margin-right: 20px;
-      margin-top: 3px;
+      position: absolute;
+      right: 10%;
+      margin-top: 4px;
+      font-size: 30px;
+      color: black;
+      background-color: rgb(246, 246, 246);
+      z-index: 100;
+
+      &:hover {
+        animation: hidden-heart 1s ease;
+        animation-fill-mode: forwards;
+
+        @keyframes hidden-heart {
+          0% {
+            transform: translate(0px, 0px);
+            color: rgb(246, 246, 246);
+          }
+          100% {
+            transform: translate(0px, -30px);
+            color: rgb(246, 246, 246);
+          }
+        }
+      }
+    }
+
+    .fas {
+      position: absolute;
+      right: 10%;
+      margin-top: 4px;
+      font-size: 30px;
+      color: transparent;
+      background: -webkit-linear-gradient(#9356DC, #FF79DA);
+      -webkit-background-clip: text;
     }
 
     h3 {
@@ -247,6 +284,51 @@ main {
       padding-top: 1px;
     }
 
+    .menu__entrees {
+      animation: apparition 1.5s;
+
+      @keyframes apparition {
+        0% {
+          transform: translate(0px, 30px);
+          opacity: 0;
+        }
+        100% {
+          transform: translate(0px, 0px);
+          opacity: 1;
+        }
+      }
+    }
+
+    .menu__plats {
+      animation: apparition 1.5s .5s;
+
+      @keyframes apparition {
+        0% {
+          transform: translate(0px, 30px);
+          opacity: 0;
+        }
+        100% {
+          transform: translate(0px, 0px);
+          opacity: 1;
+        }
+      }
+    }
+
+    .menu__desserts {
+      animation: apparition 1.5s 1s;
+
+      @keyframes apparition {
+        0% {
+          transform: translate(0px, 30px);
+          opacity: 0;
+        }
+        100% {
+          transform: translate(0px, 0px);
+          opacity: 1;
+        }
+      }
+    }
+
     .menu__entree, .menu__plat, .menu__dessert {
       background-color: white;
       border-radius: 18px;
@@ -254,34 +336,61 @@ main {
       position: relative;
       padding: 12px 0px 12px 10px;
       margin: 15px 0px;
+
+      .description {
+        width: 80%;
+        height: 100%;
+        
+
+        h4 {
+          font-size: 18px;
+          font-weight: 400;
+          margin: 0px;
+          padding-bottom: 5px;
+        }
+
+        p {
+          font-size: 15px;
+          font-weight: lighter;
+          margin: 0px;
+          flex-wrap: wrap;
+          padding-right: 70px;
+        }
+
+        span {
+          position: absolute;
+          right: 20px;
+          bottom: 11px;
+          font-weight: 500;
+        }
+      }
+      
+      .check {
+        background-color: #99e2d0;
+        position: absolute;
+        height: 100%;
+        width: 20%;
+        border-top-right-radius: 18px;
+        border-bottom-right-radius: 18px;
+        right: -20%;
+        top: 0;
+        transition: all .3s;
+      }
+      
+      &:hover {
+        
+        .description {
+          right: -20%;
+        }
+
+        .check {
+          right: 0%;
+        }
+      }
     }
   }
 }
 
-.menu__entree, .menu__plat, .menu__dessert {
-
-  h4 {
-    font-size: 18px;
-    font-weight: 400;
-    margin: 0px;
-    padding-bottom: 5px;
-  }
-
-  p {
-    font-size: 15px;
-    font-weight: lighter;
-    margin: 0px;
-    flex-wrap: wrap;
-    padding-right: 70px;
-  }
-
-  span {
-    position: absolute;
-    right: 20px;
-    bottom: 11px;
-    font-weight: 500;
-  }
-}
 
 
 // CONTACT //
