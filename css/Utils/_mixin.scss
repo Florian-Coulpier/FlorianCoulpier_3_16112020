@@ -41,3 +41,16 @@
   border: none;
   font-size: 15.8px;
 }
+
+@mixin apparition {
+  @keyframes apparition {
+    0% {
+      transform: translate(0px, 30px);
+      opacity: 0;
+    }
+    100% {
+      transform: translate(0px, 0px);
+      opacity: 1;
+    }
+  }
+}

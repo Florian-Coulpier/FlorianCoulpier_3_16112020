@@ -356,6 +356,13 @@ main {
           box-shadow: 3px 10px 10px #d6d6d669;
 }
 
+.restaurant__cards:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
 .restaurant__cards__picture {
   position: relative;
   margin: 0px;
@@ -415,6 +422,7 @@ main {
   color: black;
   background-color: white;
   z-index: 100;
+  cursor: pointer;
 }
 
 .restaurant__cards__description i:hover {
@@ -458,6 +466,7 @@ main {
   color: transparent;
   background: -webkit-linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
+  cursor: pointer;
 }
 
 main .img__heading {
@@ -500,6 +509,7 @@ main .menu i {
   color: black;
   background-color: #f6f6f6;
   z-index: 100;
+  cursor: pointer;
 }
 
 main .menu i:hover {
@@ -543,6 +553,7 @@ main .menu .fas {
   color: transparent;
   background: -webkit-linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
+  cursor: pointer;
 }
 
 main .menu h3 {
@@ -560,8 +571,8 @@ main .menu .soulignement {
 }
 
 main .menu .menu__entrees {
-  -webkit-animation: apparition 1.5s;
-          animation: apparition 1.5s;
+  -webkit-animation: apparition 2s;
+          animation: apparition 2s;
 }
 
 @-webkit-keyframes apparition {
@@ -591,8 +602,8 @@ main .menu .menu__entrees {
 }
 
 main .menu .menu__plats {
-  -webkit-animation: apparition 1.5s .5s;
-          animation: apparition 1.5s .5s;
+  -webkit-animation: apparition 2s .5s;
+          animation: apparition 2s .5s;
 }
 
 @keyframes apparition {
@@ -609,8 +620,8 @@ main .menu .menu__plats {
 }
 
 main .menu .menu__desserts {
-  -webkit-animation: apparition 1.5s 1s;
-          animation: apparition 1.5s 1s;
+  -webkit-animation: apparition 2s 1s;
+          animation: apparition 2s 1s;
 }
 
 @keyframes apparition {
@@ -637,7 +648,7 @@ main .menu .menu__entree, main .menu .menu__plat, main .menu .menu__dessert {
 }
 
 main .menu .menu__entree .description, main .menu .menu__plat .description, main .menu .menu__dessert .description {
-  width: 80%;
+  width: 100%;
   height: 100%;
 }
 
@@ -667,22 +678,33 @@ main .menu .menu__entree .description span, main .menu .menu__plat .description 
 main .menu .menu__entree .check, main .menu .menu__plat .check, main .menu .menu__dessert .check {
   background-color: #99e2d0;
   position: absolute;
-  height: 100%;
-  width: 20%;
   border-top-right-radius: 18px;
   border-bottom-right-radius: 18px;
+  height: 100%;
+  width: 20%;
   right: -20%;
   top: 0;
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  -webkit-transition: all .5s;
+  transition: all .5s;
 }
 
-main .menu .menu__entree:hover .description, main .menu .menu__plat:hover .description, main .menu .menu__dessert:hover .description {
-  right: -20%;
+main .menu .menu__entree .check i, main .menu .menu__plat .check i, main .menu .menu__dessert .check i {
+  position: absolute;
+  color: white;
+  top: 22%;
 }
 
 main .menu .menu__entree:hover .check, main .menu .menu__plat:hover .check, main .menu .menu__dessert:hover .check {
   right: 0%;
+  cursor: pointer;
+}
+
+main .menu .menu__entree:hover .check i, main .menu .menu__plat:hover .check i, main .menu .menu__dessert:hover .check i {
+  -webkit-transition: .8s;
+  transition: .8s;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  right: 40%;
 }
 
 .contact__heading {
