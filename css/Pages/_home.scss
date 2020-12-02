@@ -1,66 +1,10 @@
-.wait {
-  width: 1%;
-  height: 100%;
-  position: absolute;
-  background-color: rgb(255, 255, 255);
-  opacity: 0;
-  
-
-  // Animation background //
-  animation: opacite 1.5s linear;
-
-  @keyframes opacite {
-    0% {
-      opacity: 1;
-      width: 100%;
-    }
-    50% {
-      opacity: 0.9;
-      
-    }
-    100% {
-      opacity: 0;
-      width: 100%;
-    }
-  }
-
-  .spinner {
-    width: 80px;
-    height: 80px;
-    border-top: 15px solid #9356DC;
-    border-right: 15px solid #FF79DA;
-    border-bottom: 15px solid #99e2d0;
-    border-left: 15px solid rgb(49, 49, 49);
-    position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0; 
-    margin: auto;
-    border-radius: 50%;
-    opacity: 0;
-
-    // Animation spinner //
-    animation: spin 1.5s linear;
-
-    @keyframes spin {
-      0% {
-        transform: rotate(0deg);
-        opacity: 0.1;
-      }
-      50% {
-        transform: rotate(190deg);
-        opacity: 0.5;
-      }
-      100% {
-        transform: rotate(360deg);
-        opacity: 1;
-      }
-    }
-  }
-}
-
 main {
   max-width: 1200px;
   margin: auto;
 }
+
+
+// INDEX //
 
 .adress {
   background-color: rgb(234, 234, 234);
@@ -142,21 +86,7 @@ main {
     }
 
     .new {
-      background-color: $colourtertiaire;
-      color: #3b8673;
-      padding: 6px 10px;
-      font-size: 14px;
-      width: 18%;
-      text-align: center;
-      border-radius: 3px;
-      position: absolute;
-      right: 4%;
-      top: 8%;
-      z-index: 10;
-
-      p{
-        margin: 0px;
-      }
+      @include nouveau;
     }
   }
 
@@ -186,19 +116,7 @@ main {
       cursor: pointer;
 
       &:hover {
-        animation: hidden 1s ease;
-        animation-fill-mode: forwards;
-
-        @keyframes hidden {
-          0% {
-            transform: translate(0px, 0px);
-            color: white;
-          }
-          100% {
-            transform: translate(0px, -22px);
-            color: white;
-          }
-        }
+        @include heart_index;
       }
     }
 
@@ -214,6 +132,7 @@ main {
     }
   } 
 }
+
 
 // MENU //
 
@@ -255,19 +174,7 @@ main {
       cursor: pointer;
 
       &:hover {
-        animation: hidden-heart 1s ease;
-        animation-fill-mode: forwards;
-
-        @keyframes hidden-heart {
-          0% {
-            transform: translate(0px, 0px);
-            color: rgb(246, 246, 246);
-          }
-          100% {
-            transform: translate(0px, -30px);
-            color: rgb(246, 246, 246);
-          }
-        }
+        @include heart_menu;
       }
     }
 
@@ -296,7 +203,7 @@ main {
       padding-top: 1px;
     }
 
-    .menu__entrees {
+    .menu__entrees{
       animation: apparition 2s;
       @include apparition;
     }
@@ -377,39 +284,8 @@ main {
       }
       
       &:hover {
-        
-        .description {
-          width: 80%;
-          transition: all .5s;
-          text-overflow: ellipsis;
-        }
-
-        .check {
-          right: 0%;
-          cursor: pointer;
-
-          .fa-check-circle {
-            transition: .5s .08s;
-            transform: rotate(360deg);
-            right: 35%;
-          }
-        }
+        @include anim_check;
       }
     }
   }
-}
-
-
-// CONTACT //
-
-.contact__heading {
-  margin: 100px 0px 20px 0px;
-  text-align: center;
-  font-family: "Shrikhand";
-}
-
-.contact__mail {
-  text-align: center;
-  font-family: "Roboto";
-  margin: 20px 0px 100px 0px;
 }
