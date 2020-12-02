@@ -40,6 +40,12 @@
   background: linear-gradient(170deg, $coloursecondaire, $colourprimaire);
   border: none;
   font-size: 15.8px;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.8;
+    box-shadow: 1px 10px 10px #cfcfcf;
+    transition: .5s;
+  }
 }
 
 @mixin apparition {
