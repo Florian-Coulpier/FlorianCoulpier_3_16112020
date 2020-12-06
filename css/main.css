@@ -73,9 +73,13 @@ body h1 {
   margin: 30px 0px 35px 0px;
   padding: 15px 20px;
   border-radius: 25px;
+  color: #fff;
+  font-size: 15.8px;
+  text-decoration: none;
   background: linear-gradient(170deg, #FF79DA, #9356DC);
   border: none;
   cursor: pointer;
+  margin-top: 100px;
 }
 
 .reservation__button:hover {
@@ -195,6 +199,9 @@ main .menu button {
   margin: 30px 0px 35px 0px;
   padding: 15px 20px;
   border-radius: 25px;
+  color: #fff;
+  font-size: 15.8px;
+  text-decoration: none;
   background: linear-gradient(170deg, #FF79DA, #9356DC);
   border: none;
   cursor: pointer;
@@ -325,17 +332,19 @@ main {
 
 .adress i {
   padding-right: 15px;
-  font-size: 18px;
+  font-size: 16px;
 }
 
-.adress p {
+.adress h2 {
   padding: 15px 0px;
   margin: 0;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .reservation {
   background-color: #f6f6f6;
-  padding: 20px 15px 20px 15px;
+  padding: 20px 15px 70px 15px;
   text-align: center;
 }
 
@@ -345,7 +354,7 @@ main {
 }
 
 .reservation p {
-  margin: 0px;
+  margin: 0px 0px 50px 0px;
   font-size: 18px;
   font-weight: 100;
 }

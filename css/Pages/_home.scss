@@ -13,18 +13,20 @@ main {
 
   i {
     padding-right: 15px;
-    font-size: 18px;
+    font-size: 16px;
   }
 
-  p {
+  h2 {
     padding: 15px 0px;
     margin: 0;
+    font-size: 16px;
+    font-weight: 400;
   }
 }
 
 .reservation {
   background-color: rgb(246, 246, 246);
-  padding: 20px 15px 20px 15px;
+  padding: 20px 15px 70px 15px;
   text-align: center;
 
   h2 {
@@ -33,7 +35,7 @@ main {
   }
 
   p {
-    margin: 0px;
+    margin: 0px 0px 50px 0px;
     font-size: 18px;
     font-weight: 100;
   }
