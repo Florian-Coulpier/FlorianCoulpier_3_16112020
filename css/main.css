@@ -232,6 +232,7 @@ main .menu button a {
   position: absolute;
   background-color: white;
   opacity: 0;
+  z-index: 5000;
   -webkit-animation: opacite 1.5s linear;
           animation: opacite 1.5s linear;
 }
@@ -505,6 +506,10 @@ main {
   cursor: pointer;
 }
 
+main {
+  position: relative;
+}
+
 main .img__heading {
   height: 280px;
   width: 100%;
@@ -537,9 +542,9 @@ main .menu h2 {
   font-weight: lighter;
 }
 
-main .menu i {
+main .menu .far {
   position: absolute;
-  right: 10%;
+  right: 5%;
   margin-top: 4px;
   font-size: 30px;
   color: black;
@@ -548,7 +553,7 @@ main .menu i {
   cursor: pointer;
 }
 
-main .menu i:hover {
+main .menu .far:hover {
   -webkit-animation: hidden-heart 1s ease forwards;
           animation: hidden-heart 1s ease forwards;
 }
@@ -581,7 +586,7 @@ main .menu i:hover {
 
 main .menu .fas {
   position: absolute;
-  right: 10%;
+  right: 5%;
   margin-top: 4px;
   font-size: 30px;
   color: transparent;

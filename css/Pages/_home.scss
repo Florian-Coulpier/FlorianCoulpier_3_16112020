@@ -139,6 +139,7 @@ main {
 // MENU //
 
 main {
+  position: relative;
   
   .img__heading {
     height: 280px;
@@ -165,9 +166,9 @@ main {
       font-weight: lighter;
     }
 
-    i {
+    .far {
       position: absolute;
-      right: 10%;
+      right: 5%;
       margin-top: 4px;
       font-size: 30px;
       color: black;
@@ -182,7 +183,7 @@ main {
 
     .fas {
       position: absolute;
-      right: 10%;
+      right: 5%;
       margin-top: 4px;
       font-size: 30px;
       color: transparent;
